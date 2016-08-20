@@ -1,2 +1,391 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+// Overwrite default above this line
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+@font-face {
+    font-family: 'fira_sanslight';
+    src: url('/fonts/FiraSans-Light-webfont.eot');
+    src: url('/fonts/FiraSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/FiraSans-Light-webfont.woff2') format('woff2'), url('/fonts/FiraSans-Light-webfont.woff') format('woff'), url('/fonts/FiraSans-Light-webfont.ttf') format('truetype'), url('/fonts/FiraSans-Light-webfont.svg#fira_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sansregular';
+    src: url('/fonts/FiraSans-Regular-webfont.eot');
+    src: url('/fonts/FiraSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/FiraSans-Regular-webfont.woff2') format('woff2'), url('/fonts/FiraSans-Regular-webfont.woff') format('woff'), url('/fonts/FiraSans-Regular-webfont.ttf') format('truetype'), url('/fonts/FiraSans-Regular-webfont.svg#fira_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sansbold';
+    src: url('/fonts/FiraSans-Bold-webfont.eot');
+    src: url('/fonts/FiraSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/FiraSans-Bold-webfont.woff2') format('woff2'), url('/fonts/FiraSans-Bold-webfont.woff') format('woff'), url('/fonts/FiraSans-Bold-webfont.ttf') format('truetype'), url('/fonts/FiraSans-Bold-webfont.svg#fira_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: fira_sanslight;
+}
+h1, h2, h3, h4 {
+    font-family: fira_sansbold;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 270%;
+}
+p {
+    font-family: fira_sanslight;
+}
+input, textarea {
+    background: none;
+    border: 1px solid #555;
+    font-family: fira_sanslight;
+    padding: 10px;
+}
+section > p {
+    text-align: center;
+}
+header {
+    background: url('/img/header_bg.jpg') no-repeat center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    font-family: fira_sansregular, sans-serif;
+    padding: 7em 0 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+header #logo {
+    background: url('/img/jamesgifford_logo.png') no-repeat center center;
+    background-size: contain;
+    height: 10em;
+    margin: 0 auto 1em;
+    width: 10em;
+}
+header h1 {
+    font-size: 500%;
+    text-align: center;
+}
+header p {
+    font-size: 200%;
+    margin-bottom: 1.75em;
+    text-transform: lowercase;
+}
+header a:last-child {
+    color: #fff;
+    cursor: pointer;
+    font-size: 200%;
+    padding-bottom: 0.5em;
+    text-decoration: none;
+}
+section#about {
+    background: #fff;
+    font-size: 130%;
+    line-height: 1.7;
+    padding: 1em 3em;
+    text-align: center;
+}
+section#skills {
+    background: #efefef;
+    padding: 1em 0 2em;
+    text-align: center;
+}
+section#skills ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 320px;
+}
+section#skills ul li {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    -webkit-filter: saturate(0%);
+    -moz-filter: saturate(0%);
+    -o-filter: saturate(0%);
+    -ms-filter: saturate(0%);
+    filter: saturate(0%);
+    list-style: none;
+    margin: 12px;
+    padding: 0;
+}
+section#skills ul li a {
+    color: transparent;
+    display: block;
+    font-size: 0;
+    height: 80px;
+    line-height: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+}
+section#skills ul li:hover {
+    -webkit-filter: saturate(100%);
+    -moz-filter: saturate(100%);
+    -o-filter: saturate(100%);
+    -ms-filter: saturate(100%);
+    filter: saturate(100%);
+}
+section#skills ul li.php {
+    background-image: url('/img/logo-php.png');
+}
+section#skills ul li.laravel {
+    background-image: url('/img/logo-laravel.png');
+}
+section#skills ul li.codeigniter {
+    background-image: url('/img/logo-codeigniter.png');
+}
+section#skills ul li.cakephp {
+    background-image: url('/img/logo-cakephp.png');
+}
+section#skills ul li.wordpress {
+    background-image: url('/img/logo-wordpress.png');
+}
+section#skills ul li.python {
+    background-image: url('/img/logo-python.png');
+}
+section#skills ul li.html {
+    background-image: url('/img/logo-html.png');
+}
+section#skills ul li.css {
+    background-image: url('/img/logo-css.png');
+}
+section#skills ul li.javascript {
+    background-image: url('/img/logo-javascript.png');
+}
+section#skills ul li.jquery {
+    background-image: url('/img/logo-jquery.png');
+}
+section#skills ul li.angular {
+    background-image: url('/img/logo-angular.png');
+}
+section#skills ul li.react {
+    background-image: url('/img/logo-react.png');
+}
+section#skills ul li.swift {
+    background-image: url('/img/logo-swift.png');
+}
+section#skills ul li.phonegap {
+    background-image: url('/img/logo-phonegap.png');
+}
+section#skills ul li.phonegap:hover {
+    -webkit-filter: brightness(-100%);
+    -moz-filter: brightness(100%);
+    -o-filter: brightness(100%);
+    -ms-filter: brightness(100%);
+    filter: brightness(-100%);
+}
+section#skills ul li.ionic {
+    background-image: url('/img/logo-ionic.png');
+}
+section#skills ul li.sass {
+    background-image: url('/img/logo-sass.png');
+}
+section#skills ul li.bootstrap {
+    background-image: url('/img/logo-bootstrap.png');
+}
+section#skills ul li.git {
+    background-image: url('/img/logo-git.png');
+}
+section#work {
+    background: #4b738e;
+    color: #fff;
+    padding: 1em 0 2em;
+    text-align: center;
+}
+section#work ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 320px;
+}
+section#work ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+}
+section#work ul li:hover {
+    background: #ccc;
+    color: #000;
+}
+section#work ul li a {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent;
+    display: block;
+    font-size: 0;
+    height: 233px;
+    line-height: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 280px;
+}
+section#work ul li.bandrobot a {
+    background-image: url('/img/project-bandrobot.jpg');
+}
+section#work ul li.mightynurse a {
+    background-image: url('/img/project-mightynurse.jpg');
+}
+section#work ul li.traveloregon a {
+    background-image: url('/img/project-traveloregon.jpg');
+}
+section#work ul li span {
+    display: block;
+    font-size: 200%;
+    margin-top: 10px;
+    text-align: center;
+}
+section#contact {
+    padding: 1em 0 5em;
+    text-align: center;
+}
+section#contact form {
+    margin: 0 auto;
+    width: 320px;
+}
+section#contact form label {
+    display: none;
+}
+section#contact form input[type=text], section#contact form input[type=email], section#contact form input[type=submit], section#contact form textarea {
+    margin: 10px 0;
+    width: 100%;
+}
+footer {
+    background: #333;
+    color: #fff;
+    padding: 2em 0 1em;
+    text-align: center;
+}
+footer p:first-child {
+    font-size: 120%;
+    margin-bottom: 0.75em;
+}
+footer p:last-child {
+    font-size: 90%;
+}
+
+/* Really small screens */
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: 90%;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+    body {
+        font-size: 96%;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+    body {
+        font-size: 100%;
+    }
+    section#skills ul {
+        width: 430px;
+    }
+    section#skills ul li {
+        margin: 20px;
+    }
+    section#skills ul li a {
+        height: 100px;
+        width: 100px;
+    }
+    section#work ul {
+        width: 430px;
+    }
+    section#work ul li a {
+        height: 323px;
+        width: 388px;
+    }
+    section#contact form {
+        width: 430px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 120%;
+    }
+    section#skills ul {
+        width: 750px;
+    }
+    section#skills ul li {
+        margin: 15px;
+    }
+    section#skills ul li a {
+        height: 92px;
+        width: 92px;
+    }
+    section#work ul {
+        width: 750px;
+    }
+    section#work ul li a {
+        height: 417px;
+        width: 500px;
+    }
+    section#contact form {
+        width: 750px;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 150%;
+    }
+    section#skills ul {
+        width: 982px;
+    }
+    section#skills ul li {
+        margin: 25px;
+    }
+    section#skills ul li a {
+        height: 110px;
+        width: 110px;
+    }
+    section#work ul {
+        width: 982px;
+    }
+    section#work ul li a {
+        height: 237px;
+        width: 284px;
+    }
+    section#contact form {
+        width: 982px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 200%;
+    }
+    section#skills ul {
+        width: 1110px;
+    }
+    section#skills ul li {
+        margin: 30px;
+    }
+    section#skills ul li a {
+        height: 120px;
+        width: 120px;
+    }
+    section#work ul {
+        width: 1110px;
+    }
+    section#work ul li a {
+        height: 272px;
+        width: 326px;
+    }
+    section#contact form {
+        width: 1110px;
+    }
+}

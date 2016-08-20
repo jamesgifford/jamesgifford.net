@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::post('contact', 'PagesController@contact')->name('contact');
+Route::get('/', 'PagesController@index')->name('home');
